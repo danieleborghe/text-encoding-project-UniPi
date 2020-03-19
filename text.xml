@@ -1,0 +1,30 @@
+<!-- Diciamo che il nostro documento ha versione 1.0, con codifica UTF-8 e non dipende da risorse esterne (standalone)-->
+<? xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!-- PROLOGO -->
+<!-- document type declaration (DTD)
+o schema di codifica (XSD) -->
+
+
+<!-- Primo testo di un documento XMl (essenziale) -->
+<test> <!-- questo primo elemento, detto radice, può essere usato una sola volta-->
+    documento di test XML
+    <figlio attr="1">
+        <nipote>
+            contenuto dell'elemento nipote
+        </nipote>
+    </figlio>
+
+    <figlio attr="2">
+        <nipote>
+            <pronipote>
+                contenuto dell'elemento pronipote
+            </pronipote>
+        </nipote>
+    </figlio>
+</test>
+
+<!-- CORPO -->
+
+
+<!-- EPILOGO -->
