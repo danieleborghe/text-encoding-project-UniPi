@@ -3,4 +3,4 @@ Repository per l'esame di Codifica di testi, del corso di laurea in Informatica 
 
 AGGIORNAMENTI
 
-19/03/2020 - Upload esercizio d'esempio svolto durante la lezione di lunedì 16/03/2020 (Lezioni/160320 - lezioni.xml);
+19/03/2020 - Upload esercizio d'esempio svolto durante la lezione di lunedì 16/03/2020 (Lezioni/160320 - lezione.xml);
