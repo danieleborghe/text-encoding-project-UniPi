@@ -1,0 +1,31 @@
+<!--ESERCIZIO DTD 2-->
+<!--Fondamenti XML: Slide 102-->
+
+<!-- 
+    Filename:           300320 - schema2.dtd
+    Autore:             Daniele Borghesi
+    Data:               31 / 03 / 2020
+    Corso:              Codifica di testi
+    Laurea:             Informatica umanistica
+    Anno accademico:    2019 / 2020
+    Descizione:         Secondo esercizio sugli schemi XML (Document Type Definition) con aggiunta di attributi.
+-->
+
+<!ELEMENT TEI       (header, facsimile?, testo+)>
+<!ELEMENT header    (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT testo     (seg? | #PCDATA)>
+<!ELEMENT seg       (#PCDATA)>
+
+<!ATTLIST header    type    CDATA   #FIXED      "intestazione">
+<!ATTLIST header    lang    NMTOKEN #IMPLIED>
+<!ATTLIST facsimile source  CDATA   #REQUIRED>
+<!ATTLIST facsimile ref     IDREFS  #IMPLIED>
+<!ATTLIST testo     id      ID      #REQUIRED>
+<!ATTLIST testo     type    CDATA   #IMPLIED>
+
+<!--
+    COMMENTO
+
+    In riferimento al testo dell'esecizio, ho creato il secondo schema DTD con l'aggiunta degli attributi richiesti.
+-->

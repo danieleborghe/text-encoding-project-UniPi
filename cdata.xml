@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--ESERCIZIO CDATA-->
+<!--Fondamenti XML: Slide 71-->
+
+<!-- 
+    Filename:           260320 - cdata.xml
+    Autore:             Daniele Borghesi
+    Data:               27 / 03 / 2020
+    Corso:              Codifica di testi
+    Laurea:             Informatica umanistica
+    Anno accademico:    2019 / 2020
+    Descizione:         Primo esercizio sull'inserimento di codice html in un file XML, grazie a CDATA
+-->
+
+<loremipsum>
+    <![CDATA[ 
+        <h1>Lorem ipsum</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Id diam vel quam elementum pulvinar. 
+            Aliquam eleifend mi in nulla posuere sollicitudin.
+        </p>
+
+        <h2>Tincidunt nunc pulvinar</h2> 
+
+        <p>
+            Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. 
+            Sodales ut etiam sit amet nisl purus.
+        </p>
+    ]]>
+</loremipsum>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    TESTO DEL FILE ORIGINALE
+
+    <text>
+    il primo xml con validazione
+    </text>
+    <text />
+-->
+
+<!--
+    RISULTATO DELLA VALIDAZIONE
+
+    xmllint -noout xmlfirst.xml
+
+    xmlfirst.xml:5: parser error : Extra content at the end of the document
+    <text />
+-->
+
+<!--VERSIONE CORRETTA-->
+
+<text>
+    il primo xml con validazione
+
+    <child>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </child>
+
+    <sibling>
+        Id diam vel quam elementum pulvinar.
+    </sibling>
+</text>
+
+<!--
+    COMMENTO
+
+    Xmllint segnalava la presenza di un contenuto errato alla fine del documento.
+    Effettivamente, il tag <text> utilizzato come radice veniva riaperto una seconda volta.
+    Questo tipo di operazione non è valida: il tag radice può essere utilizzato una e una sola volta.
+    In riferimento al comnando dell'esercizio, ho poi aggiunto un figlio <child> e un fratello <sibling> sullo stesso livello.
+-->

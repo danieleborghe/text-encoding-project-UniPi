@@ -1,0 +1,23 @@
+<!--ESERCIZIO DTD-->
+<!--Fondamenti XML: Slide 92-->
+
+<!-- 
+    Filename:           300320 - schema.dtd
+    Autore:             Daniele Borghesi
+    Data:               31 / 03 / 2020
+    Corso:              Codifica di testi
+    Laurea:             Informatica umanistica
+    Anno accademico:    2019 / 2020
+    Descizione:         Primo esercizio sugli schemi XML (Document Type Definition)
+-->
+
+<!ELEMENT TEI       (header, facsimile, text)>
+<!ELEMENT header    (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT text      (#PCDATA)>
+
+<!--
+    COMMENTO
+
+    In riferimento al testo dell'esecizio, ho creato il primo schema DTD.
+-->

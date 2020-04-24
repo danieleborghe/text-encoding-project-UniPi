@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--ESERCIZIO ANNIDAMENTO ERRATO-->
+<!--Fondamenti XML: Slide 54-->
+
+<!-- 
+    Filename:           260320 - errore.xml
+    Autore:             Daniele Borghesi
+    Data:               27 / 03 / 2020
+    Corso:              Codifica di testi
+    Laurea:             Informatica umanistica
+    Anno accademico:    2019 / 2020
+    Descizione:         Test di validazione di un file XML non opportunamente annidato.
+-->
+
+<loremipsum>
+    <b> Lorem ipsum dolor sit amet,
+    <i> consectetur adipiscing elit,
+    </b> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i>
+</loremipsum>
+
+<!--
+    RISULTATO DELLA VALIDAZIONE
+
+    xmllint -noout errore.xml
+
+    errore.xml:17: parser error : Opening and ending tag mismatch: i line 17 and b
+        <b> Lorem ipsum dolor sit amet,<i> consectetur adipiscing elit,</b> sed do e
+                                                                        ^
+    errore.xml:17: parser error : Opening and ending tag mismatch: b line 17 and i
+    elit,</b> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i
+                                                                                ^
+-->
+
+<!--
+    COMMENTO
+
+    L'annidamento tra i tag <b> e <i> non è corretto.
+    Una possibile correzione potrebbe essere la seguente:
+
+    <b> Lorem ipsum dolor sit amet,
+    </b> consectetur adipiscing elit,
+    <i> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i>
+-->
