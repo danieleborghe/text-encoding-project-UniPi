@@ -1,0 +1,32 @@
+<!--ESERCIZIO DTD 4-->
+<!--Fondamenti XML: Slide 108-->
+
+<!-- 
+    Filename:           schema4.dtd
+    Autore:             Daniele Borghesi
+    Data:               11 / 04 / 2020
+    Corso:              Codifica di testi
+    Laurea:             Informatica umanistica
+    Anno accademico:    2019 / 2020
+    Descizione:         Schema DTD per il quarto esercizio sugli schemi.
+-->
+
+    <!ELEMENT TEI       (header, facsimile?, testo+)>
+    <!ELEMENT header    (#PCDATA)>
+    <!ELEMENT facsimile (#PCDATA)>
+    <!ELEMENT testo     (#PCDATA | seg)*>
+    <!ELEMENT seg       (#PCDATA)>
+
+    <!ATTLIST header    type    CDATA   #FIXED      "intestazione">
+    <!ATTLIST header    lang    NMTOKEN #IMPLIED>
+    <!ATTLIST facsimile source  CDATA   #REQUIRED>
+    <!ATTLIST facsimile ref     IDREFS  #IMPLIED>
+    <!ATTLIST testo     id      ID      #REQUIRED>
+    <!ATTLIST testo     type    CDATA   #IMPLIED>
+
+<!--
+    COMMENTO
+
+    In riferimento al testo dell'esercizio, ho creato lo schema DTD esterno da collegare al file XML schema4.xml.
+    Lo schema è lo stesso utilizzato per l'esercizio schema2.dtd.
+-->
