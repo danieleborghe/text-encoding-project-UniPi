@@ -1,2 +1,0 @@
-<!ELEMENT primo-elemento(figlio)>   <!-- elemento radice che ha come content model (tipo di contenuto) un unico elemento, che è figlio-->
-<!ELEMENT figlio(#PCDATA)>          <!-- il conten model (tipo di contenuto) di filgio è solo testuale (#PCDATA)-->
