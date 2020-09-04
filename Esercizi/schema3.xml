@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--ESERCIZIO DTD 3-->
+<!--Fondamenti XML: Slide 108-->
+
+<!-- 
+    Filename:           schema3.xml
+    Autore:             Daniele Borghesi
+    Data:               11 / 04 / 2020
+    Corso:              Codifica di testi
+    Laurea:             Informatica umanistica
+    Anno accademico:    2019 / 2020
+    Descizione:         Terzo esercizio sugli schemi XML (Document Type Definition) con DOCTYPE interno.
+-->
+
+<!DOCTYPE TEI [
+    <!ELEMENT TEI       (header, facsimile?, testo+)>
+    <!ELEMENT header    (#PCDATA)>
+    <!ELEMENT facsimile (#PCDATA)>
+    <!ELEMENT testo     (#PCDATA | seg)*>
+    <!ELEMENT seg       (#PCDATA)>
+
+    <!ATTLIST header    type    CDATA   #FIXED      "intestazione">
+    <!ATTLIST header    lang    NMTOKEN #IMPLIED>
+    <!ATTLIST facsimile source  CDATA   #REQUIRED>
+    <!ATTLIST facsimile ref     IDREFS  #IMPLIED>
+    <!ATTLIST testo     id      ID      #REQUIRED>
+    <!ATTLIST testo     type    CDATA   #IMPLIED>
+] >
+
+<TEI>
+    <header type="intestazione" lang="LAT">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Morbi tincidunt augue interdum velit euismod in pellentesque massa placerat.
+    </header>
+
+    <facsimile source="generator">
+        Ultrices sagittis orci a scelerisque purus semper eget. 
+        Laoreet id donec ultrices tincidunt arcu non sodales. 
+        Vulputate mi sit amet mauris. 
+        Nam libero justo laoreet sit amet cursus.
+    </facsimile>
+
+    <testo type="capoverso" id="1">
+        Neque ornare aenean euismod elementum nisi quis eleifend. 
+        Vitae suscipit tellus mauris a. 
+        Mattis enim ut tellus elementum sagittis vitae et. 
+        Fermentum leo vel orci porta.
+
+        <seg>
+            Id semper risus in hendrerit gravida rutrum quisque. 
+            Fringilla phasellus faucibus scelerisque eleifend donec pretium. 
+            Lectus quam id leo in. Sed faucibus turpis in eu mi bibendum neque egestas congue.
+        </seg>
+    </testo>
+</TEI>
+
+<!--
+    COMMENTO
+
+    In riferimento al testo dell'esercizio, ho creato un file XML con uno schema DTD interno, racchiuso nella dichiarazione DOCTYPE.
+    Lo schema è lo stesso utilizzato nell'esercizio di schema2.dtd.
+-->
