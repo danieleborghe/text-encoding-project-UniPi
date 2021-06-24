@@ -10,7 +10,7 @@ The project consists in the encoding in XML language of a letter of the Italian 
 
 * __Type:__ university project
 * __Supervisor:__ dr. Angelo Mario Del Grosso
-* __Year:__ academic year 2020/2021
+* __Year:__ academic year 2019/2020
 * __Language:__ 
 	- __Letter__: italian
 	- __Web app__: italian
