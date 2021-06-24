@@ -1,4 +1,4 @@
-# UniPiPROJECT_TextEncoding
+# TextEncodingProject_UniPi
 
 The project consists in the encoding in XML language of a letter of the Italian composer Vincenzo Bellini to the jurist Giovanni Battista Perucchini (November 25, 1830). The visualization is allowed through a very simple and static web application, implemented through XSLT language. The encoding in XML language complies with [TEI standards](https://tei-c.org/).
 
