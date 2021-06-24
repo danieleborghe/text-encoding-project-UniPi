@@ -1,6 +1,6 @@
 # project-TextEncoding-UniPi
 
-##Informations
+## Informations
 * __Type:__ university project
 * __Year:__ academic year 2019/2020
 * __Lang:__ italian
